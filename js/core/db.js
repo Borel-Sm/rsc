@@ -44,10 +44,10 @@ App.DB = (function () {
 
   /* ---------------- Config do clube ---------------- */
   const DEFAULT_CONFIG = {
-    nomeClube: 'Meu Clube',
+    nomeClube: 'Ressacados',
     escudo: null, // base64
     temporadaAtual: String(new Date().getFullYear()),
-    tema: 'light',
+    tema: 'dark',
     diasAlerta: 3,
   };
 
