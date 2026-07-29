@@ -47,7 +47,7 @@ App.DB = (function () {
     nomeClube: 'Ressacados',
     escudo: null, // base64
     temporadaAtual: String(new Date().getFullYear()),
-    tema: 'dark',
+    tema: 'light',
     diasAlerta: 3,
   };
 
