@@ -1,0 +1,123 @@
+/* ==========================================================================
+   DESIGN TOKENS — Sistema do Clube
+   Paleta: azul + branco (principal), prata claro + cinza escuro (secundárias)
+   Referência estética: Apple / Linear / Notion
+   ========================================================================== */
+
+:root {
+  /* --- Cor: marca --- */
+  --blue-700: #1D4ED8;
+  --blue-600: #2563EB;
+  --blue-500: #3B82F6;
+  --blue-400: #60A5FA;
+  --blue-100: #DCE8FF;
+  --blue-50:  #EEF4FF;
+
+  /* --- Cor: neutros (light) --- */
+  --white: #FFFFFF;
+  --silver-50:  #F8F9FB;
+  --silver-100: #F3F5F8;
+  --silver-200: #E4E7EC;
+  --silver-300: #D3D8E0;
+  --gray-900: #14171F;
+  --gray-700: #2C3140;
+  --gray-600: #4B5566;
+  --gray-400: #8A93A3;
+  --gray-300: #B4BAC6;
+
+  /* --- Cor: estado --- */
+  --success: #16A34A;
+  --success-bg: #E9F9EF;
+  --warning: #D97706;
+  --warning-bg: #FEF3E2;
+  --danger: #DC2626;
+  --danger-bg: #FDECEC;
+
+  /* --- Superfícies / tema claro (default) --- */
+  --bg-app: linear-gradient(180deg, #F7F9FC 0%, #EEF2F9 100%);
+  --bg-surface: var(--white);
+  --bg-surface-alt: var(--silver-50);
+  --border-color: var(--silver-200);
+  --text-primary: var(--gray-900);
+  --text-secondary: var(--gray-600);
+  --text-tertiary: var(--gray-400);
+  --accent: var(--blue-600);
+  --accent-strong: var(--blue-700);
+  --accent-soft: var(--blue-50);
+
+  /* --- Glassmorphism --- */
+  --glass-bg: rgba(255, 255, 255, 0.62);
+  --glass-border: rgba(255, 255, 255, 0.55);
+  --glass-blur: blur(20px) saturate(180%);
+  --nav-glass-bg: rgba(255, 255, 255, 0.72);
+
+  /* --- Sombra (discreta) --- */
+  --shadow-sm: 0 1px 2px rgba(20, 23, 31, 0.04), 0 1px 1px rgba(20, 23, 31, 0.03);
+  --shadow-md: 0 4px 16px rgba(20, 23, 31, 0.06), 0 1px 3px rgba(20, 23, 31, 0.04);
+  --shadow-lg: 0 12px 32px rgba(20, 23, 31, 0.10), 0 2px 8px rgba(20, 23, 31, 0.05);
+  --shadow-accent: 0 8px 24px rgba(37, 99, 235, 0.20);
+
+  /* --- Raio --- */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-full: 999px;
+
+  /* --- Espaçamento --- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* --- Tipografia --- */
+  --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.8125rem;
+  --fs-base: 0.9375rem;
+  --fs-md: 1.0625rem;
+  --fs-lg: 1.375rem;
+  --fs-xl: 1.75rem;
+  --fs-2xl: 2.25rem;
+  --fs-3xl: 3rem;
+
+  /* --- Transições --- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --t-fast: 150ms;
+  --t-med: 280ms;
+  --t-slow: 420ms;
+
+  /* --- Layout --- */
+  --sidebar-w: 248px;
+  --topbar-h: 64px;
+}
+
+/* ================= TEMA ESCURO ================= */
+html[data-theme="dark"] {
+  --bg-app: linear-gradient(180deg, #0A0C11 0%, #12151C 100%);
+  --bg-surface: #161A22;
+  --bg-surface-alt: #1B1F29;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --text-primary: #F3F5F8;
+  --text-secondary: #9AA3B2;
+  --text-tertiary: #6B7280;
+  --accent: var(--blue-500);
+  --accent-strong: var(--blue-400);
+  --accent-soft: rgba(59, 130, 246, 0.14);
+
+  --glass-bg: rgba(22, 26, 34, 0.62);
+  --glass-border: rgba(255, 255, 255, 0.07);
+  --nav-glass-bg: rgba(18, 21, 28, 0.75);
+
+  --success-bg: rgba(22, 163, 74, 0.14);
+  --warning-bg: rgba(217, 119, 6, 0.14);
+  --danger-bg: rgba(220, 38, 38, 0.14);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
